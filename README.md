@@ -1,6 +1,14 @@
-# slackm
-Daily slack message counter to see how much I'm chatting
+# slack-post
 
-### Demo
+Post messages from ARGV or STDIN to a slack channel
 
-![screenshot of my daily message count at a terminal](https://user-images.githubusercontent.com/147981/58042941-8fd81e80-7b01-11e9-8da2-236001a88ee6.png)
+## Usage
+
+Set two environment variables first:
+```sh
+export SLACK_POSTER_API_TOKEN=redacted
+export SLACK_POSTER_DESTINATION="#bot-tests"
+```
+
+- Post from STDIN: `echo hi mom | slack-post` 
+- Post from ARGV: `slack-post hi mom`
